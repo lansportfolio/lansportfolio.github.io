@@ -8,11 +8,15 @@ p {font-size: 1em;}
 h2 {font-size: 1.2em;}
 h3 {font-size: 1.1em;}
 h4 {font-size: 1em;}
+img {width: 100%; height: auto;}
 
 /* Intro Section */
 .intro-section { display: flex; align-items: center; gap: 40px; }
 .intro-photo img { width: 170px; height: 170px; border-radius: 50%; object-fit: cover; }
 .intro-text h2 { margin-top: 0; }
+.intro-text-td { padding-left: 1.5rem; }
+.td_35 {width: 35%;}
+.website-description {padding-right: 1.5rem;}
 
 /* Project Grid */
 .project-grid { 
@@ -21,18 +25,24 @@ h4 {font-size: 1em;}
   gap: 30px; 
   margin-top: 20px; 
 }
-.project-grid-web { 
-  display: grid; 
-  grid-template-columns: 60% 35%;
-  gap: 30px;
-  margin-top: 20px; 
-}
-@media only screen and (max-width: 460px) {
-  .project-grid-web {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-    gap: 30px; 
-    margin-top: 20px; 
+
+@media only screen and (max-width: 540px) {
+  table, tr, td {
+    display: block;
+    width: 100%;
+  }
+  td img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .intro-text-td { padding-left: 0; }
+  .td_35 {width: 100%;}
+  .website-description {padding-right: 0;}
+
+  .intro-text-name {
+    text-align: center;
+    padding-top: 1rem;
   }
 }
 
@@ -46,6 +56,7 @@ h4 {font-size: 1em;}
   color: inherit;
   transition: all 0.3s;
 }
+
 .project-card:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-color: #096bac;
@@ -72,6 +83,8 @@ h4 {font-size: 1em;}
 .project-card-body {
   margin: 0;
 }
+
+
 /* Category Posts (Post Card Styling) */
 .post-grid { 
   display: grid; 
