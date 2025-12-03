@@ -1,0 +1,62 @@
+/* Base Layout */
+body { font-family: sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+header { border-bottom: 1px solid #eee; margin-bottom: 30px; padding-bottom: 15px; }
+nav a { font-size: 1.1em; margin-right: 20px; text-decoration: none; font-weight: bold; }
+a { color: #096bac; }
+hr { border: 0; height: 1px; background: #eee; margin: 40px 0; }
+p {font-size: 1.1em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.4em;}
+h4 {font-size: 1em;}
+
+/* Intro Section */
+.intro-section { display: flex; align-items: center; gap: 40px; }
+.intro-photo img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; }
+.intro-text h2 { margin-top: 0; }
+
+/* Project Grid */
+.project-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 30px; 
+  margin-top: 20px; 
+}
+
+/* Homepage Project Card Styling */
+.project-card {
+  display: block; 
+  padding: 25px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  text-decoration: none; 
+  color: inherit;
+  transition: all 0.3s;
+}
+.project-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-color: #096bac;
+  transform: translateY(-2px);
+}
+.project-card h3 { color: #096bac; margin-top: 0; }
+.project-description { font-size: 1em; color: #777; }
+
+/* Category Posts (Post Card Styling) */
+.post-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+}
+.post-card {
+  display: block; 
+  padding: 15px; 
+  border: 1px solid #f0f0f0; 
+  border-radius: 6px; 
+  text-decoration: none; 
+  color: inherit;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post-card h3 { font-size: 1.2em; margin-top: 0; }
+.post-meta { font-size: 0.9em; color: #999; margin-bottom: 10px; }
+.post-excerpt { font-size: 0.9em; }
