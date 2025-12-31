@@ -355,11 +355,11 @@ img {width: 100%; height: auto;}
     font-size: 0.85em;
   }
   
-  .resume-skill-item {
+  /* .resume-skill-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
-  }
+  } */
   
   .resume-skills-list-inline {
     gap: 6px;
