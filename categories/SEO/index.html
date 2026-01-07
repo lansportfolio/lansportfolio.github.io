@@ -16,6 +16,8 @@
       
         <a href="/">Home</a>
       
+        <a href="/blog">Blog</a>
+      
         <a href="/about">About me</a>
       
     </nav>
@@ -26,6 +28,7 @@
     .project-posts-container {
         padding: 0.5rem 0 0 0;
     }
+
     .project-posts-list {
         list-style: none;
         padding: 0;
@@ -34,24 +37,27 @@
         flex-direction: column;
         gap: 1.5rem;
     }
+
     .project-post-box {
-        border: 1px solid #ddd; 
+        border: 1px solid #ddd;
         display: flex;
         background-color: #ffffff;
         overflow: hidden;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-radius: 6px; 
-        text-decoration: none; 
+        border-radius: 6px;
+        text-decoration: none;
         color: inherit;
         /* box-shadow: 0 1px 3px rgba(0,0,0,0.05); */
-        
+
         /* font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif; */
     }
+
     .project-post-box:hover {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         border-color: #096bac;
         transform: translateY(-2px);
     }
+
     .project-post-thumbnail {
         flex-shrink: 0;
         width: 200px;
@@ -59,11 +65,13 @@
         overflow: hidden;
         background-color: #f0f0f0;
     }
+
     .project-post-thumbnail img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
     .project-post-thumbnail-placeholder {
         width: 100%;
         height: 100%;
@@ -74,6 +82,7 @@
         color: #999;
         font-size: 0.9rem;
     }
+
     .project-post-content {
         flex: 1;
         padding: 1.5rem;
@@ -82,19 +91,23 @@
         flex-direction: column;
         justify-content: center;
     }
+
     .project-post-title {
         margin: 0 0 0.5rem 0;
         font-size: 1.25rem;
         font-weight: bold;
     }
+
     .project-post-title a {
         color: #2a2a2a;
         text-decoration: none;
         transition: color 0.3s ease;
     }
+
     .project-post-title a:hover {
         color: #815f41;
     }
+
     .project-post-meta {
         display: flex;
         flex-direction: column;
@@ -102,22 +115,26 @@
         font-size: 0.9rem;
         color: #666;
     }
+
     .project-post-author {
         display: flex;
         align-items: center;
         gap: 0.5rem;
     }
+
     .project-post-date {
         display: flex;
         align-items: center;
         gap: 0.5rem;
     }
+
     .project-posts-title {
         margin-bottom: 2rem;
         text-transform: capitalize;
         text-align: center;
         color: #815f41;
     }
+
     .project-posts-description {
         margin-bottom: 2rem;
         font-size: 0.9rem;
@@ -125,72 +142,132 @@
         /* font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif; */
         text-align: center;
     }
+
     .project-posts-description p {
         margin: 0;
         padding: 0;
     }
 
     @media screen and (max-width: 736px) {
-        #main > * {
+        #main>* {
             padding: 3rem 1.5rem 3rem 1.5rem;
         }
 
-}
+    }
+
     @media only screen and (max-width: 500px) {
         .project-posts-container {
             padding: 2rem 1.5rem;
         }
+
         .project-post-box {
             flex-direction: column;
         }
+
         .project-post-thumbnail {
             width: 100%;
             height: 150px;
         }
+
         .project-post-content {
             padding: 1rem;
         }
     }
 </style>
-<h2>SEO</h2>
-            <div class="project-posts-container">
-                <ul class="project-posts-list">
-                       
-                      <li >
-                        <a href="/SEO/How_Do_I_Make_My_Hexo_Website_Show_Up_on_Google_Search/" class="project-post-box">
-                        <div class="project-post-thumbnail">
-                          
-                            <img src="/./source/_posts/How%20Do%20I%20Make%20My%20Hexo%20Website%20Show%20Up%20on%20Google%20Search/7_setup_data_stream.png" alt="How Do I Make My Hexo Website Show Up on Google Search" />
+<h1>
+    SEO
+</h1>
+<div class="project-posts-container">
+    <ul class="project-posts-list">
+        
+            <li>
+                <a href="/SEO/how-do-i-optimize-my-content-to-match-the-customer-intent/" class="project-post-box">
+                    <div class="project-post-thumbnail">
                         
+                                <div class="project-post-thumbnail-placeholder">No Image</div>
+                                
+                    </div>
+                    <div class="project-post-content">
+                        <h2 class="project-post-title">
+                            <p>
+                                How do I optimize my content to match the customer intent
+                            </p>
+                        </h2>
+                        <div class="project-post-meta">
+                            <div class="project-post-date">
+                                <span>Date:</span>
+                                <span>
+                                    2025-11-05
+                                </span>
+                            </div>
                         </div>
-                        <div class="project-post-content">
-                          <h2 class="project-post-title">
-                              <p>How Do I Make My Hexo Website Show Up on Google Search</p>
-                              <!-- <a href="/SEO/How_Do_I_Make_My_Hexo_Website_Show_Up_on_Google_Search/">How Do I Make My Hexo Website Show Up on Google Search</a> -->
-                          </h2>
-                          <div class="project-post-meta">
-                              <div class="project-post-date">
-                                  <span>Date:</span>
-                                  <span>2025-10-09</span>
-                              </div>
-                          </div>
-                      </div>
-                    </a>   
-                      </li>  
-                    
-                </ul>
-            </div>
-        </div>
+                    </div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/SEO/how-do-i-create-my-customer-personas-without-crm/" class="project-post-box">
+                    <div class="project-post-thumbnail">
+                        
+                            <img src="/post-images/how-do-i-create-my-customer-personas-without-crm/1.jpg" alt="How do I create my customer personas without CRM" />
+                            
+                    </div>
+                    <div class="project-post-content">
+                        <h2 class="project-post-title">
+                            <p>
+                                How do I create my customer personas without CRM
+                            </p>
+                        </h2>
+                        <div class="project-post-meta">
+                            <div class="project-post-date">
+                                <span>Date:</span>
+                                <span>
+                                    2025-11-04
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/SEO/how-do-i-make-my-website-crawlable/" class="project-post-box">
+                    <div class="project-post-thumbnail">
+                        
+                            <img src="/post-images/how-do-i-make-my-website-crawlable/7_setup_data_stream.png" alt="How do I make my website crawlable" />
+                            
+                    </div>
+                    <div class="project-post-content">
+                        <h2 class="project-post-title">
+                            <p>
+                                How do I make my website crawlable
+                            </p>
+                        </h2>
+                        <div class="project-post-meta">
+                            <div class="project-post-date">
+                                <span>Date:</span>
+                                <span>
+                                    2025-10-09
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            
+    </ul>
+</div>
+</div>
 
-        <footer style="text-align: center; padding-top: 2em;">
-          
-        </footer> 
+<footer style="text-align: center; padding-top: 2em;">
+    
+</footer> 
   </main>
 
   <hr>
 
   <footer style="text-align: center; padding-top: 1em;">
-    <p>&copy; 2025 Lan</p>
+    <p>&copy; 2026 Lan</p>
   </footer>
 </body>
 </html>

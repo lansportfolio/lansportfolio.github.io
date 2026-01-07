@@ -1,15 +1,18 @@
-/* Base Layout */
+/* ----------Base Layout---------- */
 body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; }
 header { border-bottom: 1px solid #eee; margin-bottom: 30px; padding-bottom: 15px; }
 nav a { font-size: 0.9em; margin-right: 30px; text-decoration: none; font-weight: bold; }
 a { color: #228bd1; }
-hr { border: 0; height: 1px; background: #eee; margin: 40px 0; }
+hr {border: none; border-bottom: 1px solid #eaeaea; margin-top: 3.2em; margin-bottom: 1em; height: 10px;}
 p {font-size: 1em;}
-h2 {font-size: 1.2em;}
+h1 {font-size: 1.6em;}
+h2 {font-size: 1.3em;}
 h3 {font-size: 1.1em;}
 h4 {font-size: 1em;}
 img {width: 100%; height: auto;}
 
+
+/* ----------homepage styling---------- */
 /* Intro Section */
 .intro-section { display: flex; align-items: center; gap: 40px; }
 .intro-photo img { width: 170px; height: 170px; border-radius: 50%; object-fit: cover; }
@@ -27,11 +30,11 @@ img {width: 100%; height: auto;}
 }
 
 @media only screen and (max-width: 540px) {
-  table, tr, td {
+  .intro-section table, .intro-section tr, .intro-section td, .projects-section table, .projects-section tr, .projects-section td {
     display: block;
     width: 100%;
   }
-  td img {
+  .intro-section td img, .projects-section td img {
     display: block;
     margin: 0 auto;
   }
@@ -84,7 +87,7 @@ img {width: 100%; height: auto;}
   margin: 0;
 }
 
-
+/* ----------within category page styling---------- */
 /* Category Posts (Post Card Styling) */
 .post-grid { 
   display: grid; 
@@ -106,6 +109,73 @@ img {width: 100%; height: auto;}
 .post-meta { font-size: 0.9em; color: #999; margin-bottom: 10px; }
 .post-excerpt { font-size: 0.9em; }
 
+/* ----------blog page styling---------- */
+.blog-page {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.blog-page-header h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.blog-page-description {
+  margin: 0;
+  margin-top: 1.5em;
+  max-width: 720px;
+  color: #555;
+}
+
+.blog-category-grid {
+  margin-top: 10px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+}
+
+.category-card-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 540px) {
+  .blog-page {
+    gap: 10px;
+  }
+
+  .category-card {
+    min-height: 0;
+  }
+}
+
+
+/* ----------posts styling---------- */
+/* post table*/
+.project-detail table {border-collapse: collapse; border-spacing: 0; margin-top: 3em;font-size: 0.9em}
+.project-detail table th, .project-detail th { background: #fbfbfb;}
+.project-detail table thead th, .project-detail thead th { background: #f1f1f1;}
+.project-detail table caption {border-bottom: none;}
+.project-detail table th, .project-detail table td, .project-detail th, .project-detail td, .project-detail table caption{
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  color: #454545;
+}
+/* post img */
+.post-single-img-container {margin-top: 3em; margin-bottom: 3em;display: flex;justify-content: center;}
+.post-single-img-container img {width: 60%;height: auto;}
+
+@media only screen and (max-width: 780px) {
+  .post-single-img-container img {width: 100%;height: auto;}
+}
+
+
+/* ----------resume styling---------- */
 /* Resume Layout Styles */
 .resume-page {
   max-width: 900px;
@@ -231,6 +301,10 @@ img {width: 100%; height: auto;}
 
 .resume-item-description li {
   margin-bottom: 6px;
+}
+
+.resume-item-description p {
+  margin:0;
 }
 
 /* Skills Styles */
