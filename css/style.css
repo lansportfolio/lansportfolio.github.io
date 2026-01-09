@@ -10,6 +10,13 @@ h2 {font-size: 1.5em;}
 h3 {font-size: 1.3em;}
 h4 {font-size: 1em;}
 img {width: 100%; height: auto;}
+blockquote {
+  margin: 1em 0;
+  padding: 0.5em 20px;
+  border-left: 5px solid #c4c4c4;
+  background-color: #f9f9f9;
+  color: #555;
+}
 
 
 /* ----------homepage styling---------- */
@@ -156,6 +163,16 @@ img {width: 100%; height: auto;}
 
 
 /* ----------posts styling---------- */
+/* post h2 */
+.project-detail h2 {
+  /* background-color: #ededed;
+  border: 2px solid #cecece;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-align: center;
+  display: inline-block; */
+}
+
 /* post table*/
 .project-detail table {border-collapse: collapse; border-spacing: 0; margin-top: 2em;margin-bottom: 2em; margin-left: auto;margin-right: auto;font-size: 0.9em;}
 .project-detail table th, .project-detail th { background: #fbfbfb;}
@@ -198,9 +215,9 @@ img {width: 100%; height: auto;}
 }
 
 /* post img */
-.post-single-img-container-60 {margin-bottom: 2em;margin-top: 2em;}
+.post-single-img-container-70 {margin-bottom: 2em;margin-top: 2em;}
 .post-single-img-body {display: flex;justify-content: center;}
-.post-single-img-body img {width: 60%;height: auto;}
+.post-single-img-body img {width: 70%;height: auto;}
 .post-single-img-text-body p {text-align: center; margin: 0; margin-top: 0.3em; font-size: 0.9em;color:#333;}
 
 
