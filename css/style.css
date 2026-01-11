@@ -265,6 +265,55 @@ blockquote {
   }
 }
 
+/* ----------Code block container styling---------- */
+figure.highlight table,
+figure.highlight tr,
+figure.highlight td {
+  display: block;
+  border: none;
+}
+
+figure.highlight .gutter {
+  display: none;
+}
+
+figure.highlight {
+  background: #0f172a;
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+  margin: 1em 0;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+figure.highlight pre {
+  margin: 0;
+  background: transparent;
+}
+
+figure.highlight .code {
+  padding: 0;
+}
+
+figure.highlight .line {
+  white-space: pre;
+  display: inline;
+}
+
+figure.highlight .tag {
+  color: #ffffff;
+}
+
+figure.highlight .name {
+  color: #38bdf8;
+}
+
+figure.highlight .line {
+  color: #e5e7eb;
+}
+
 /* ----------Table of Contents styling---------- */
 .post-toc {
   margin: 2em 0;
