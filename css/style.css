@@ -1,5 +1,12 @@
 /* ----------Base Layout---------- */
-body { font-family: sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+body { 
+  font-family: sans-serif; 
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  line-height: 1.6; 
+  /* background-color: #fdfaf3; */
+}
 header { 
   border-bottom: 1px solid #eee; 
   margin-bottom: 0.5em; 
@@ -182,6 +189,13 @@ blockquote {
 
 
 /* ----------posts styling---------- */
+/* .project-detail h3 {
+  padding: 0.5em;
+  display: inline-block;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+} */
 
 /* post table*/
 .project-detail table {border-collapse: collapse; border-spacing: 0; margin-top: 2em;margin-bottom: 2em; margin-left: auto;margin-right: auto;font-size: 0.9em;}
@@ -248,6 +262,77 @@ blockquote {
 @media only screen and (max-width: 540px) {
   .post-three-img-container {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ----------Table of Contents styling---------- */
+.post-toc {
+  margin: 2em 0;
+  padding: 1.5em;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  border-left: 4px solid #c4c4c4;
+}
+
+.post-toc-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.post-toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.post-toc li {
+  margin: 0.5em 0;
+  line-height: 1.6;
+}
+
+.post-toc li a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post-toc li a:hover {
+  color: #228bd1;
+  text-decoration: underline;
+}
+
+.post-toc ul ul {
+  padding-left: 1.5em;
+  margin-top: 0.3em;
+}
+
+.post-toc ul ul ul {
+  padding-left: 1.5em;
+}
+
+.post-toc li.active > a {
+  color: #228bd1;
+  font-weight: 500;
+}
+
+/* Responsive design for TOC */
+@media only screen and (max-width: 640px) {
+  .post-toc {
+    padding: 1em;
+    margin: 1.5em 0;
+  }
+  
+  .post-toc-title {
+    font-size: 1em;
+  }
+  
+  .post-toc li {
+    font-size: 0.9em;
   }
 }
 
