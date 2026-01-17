@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon48.png">
+	<meta http-equiv='content-language' content='en-us'>
+  <title>Lan&#39;s Portfolio | Marketer</title>
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+<body>
+  <header>
+    <a href="/" class="header-logo">
+      <img src="/images/logo.jpg" alt="Lan&#39;s Portfolio Logo">
+    </a>
+    <nav>
+      
+        <a href="/">Home</a>
+      
+        <a href="/about">About me</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <article class="project-detail">
+  <!-- Post Navigation Menu -->
+  <nav class="post-navigation">
+    <!-- Breadcrumb Navigation -->
+    <div class="post-breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-separator">›</span>
+      <a href="/blog/">Blog</a>
+      
+        
+          <span class="breadcrumb-separator">›</span>
+          <a href="/categories/SEO/">SEO</a>
+        
+        
+      
+      <span class="breadcrumb-separator">›</span>
+      <span class="breadcrumb-current">How I Made My Website Crawlable for Search Engines</span>
+    </div>
+  </nav>
+
+  <h1>How I Made My Website Crawlable for Search Engines</h1>
+  <!-- <p class="post-meta">Category: <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/SEO/">SEO</a></li></ul></p> -->
+  <p class="post-meta" style="text-align: right; ">Published: 2025-11-01</p>
+  
+  <!-- Table of Contents -->
+  
+    <div class="post-toc">
+      <div class="post-toc-title">Table of Contents</div>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-1-Establishing-the-Technical-Handshake"><span class="toc-text">Step 1: Establishing the Technical &quot;Handshake&quot;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-2-Removing-Crawl-Friction"><span class="toc-text">Step 2: Removing &quot;Crawl Friction&quot;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-3-Implementing-Push-vs-Pull-Indexing"><span class="toc-text">Step 3: Implementing &quot;Push&quot; vs. &quot;Pull&quot; Indexing</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-4-Signaling-Authority-through-Discovery-Links"><span class="toc-text">Step 4: Signaling Authority through Discovery Links</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-5-Monitoring-the-Indexation-Lifecycle"><span class="toc-text">Step 5: Monitoring the Indexation Lifecycle</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Summary-Checklist-for-your-Portfolio"><span class="toc-text">Summary Checklist for your Portfolio</span></a></li></ol>
+    </div>
+  
+
+  <!-- Post content -->
+  <div class="post-content">
+    <p>After building a website that&#39;s functioning for product browsing, directing to checkout page and completing purchasing, I decided to get my site indexed by search engines, so that I could get more customer data and optimize my site with active users real data. </p>
+<p>In this project summary, I will detail how I managed the entire lifecycle of how a search engine bot discovers, parses, and saves my site through proactive discovery strategy. </p>
+<hr>
+<h2 id="Step-1-Establishing-the-Technical-Handshake"><a href="#Step-1-Establishing-the-Technical-Handshake" class="headerlink" title="Step 1: Establishing the Technical &quot;Handshake&quot;"></a>Step 1: Establishing the Technical &quot;Handshake&quot;</h2><p>Search engines don&#39;t just &quot;find&quot; websites; they need to be invited. The first step is creating the infrastructure that makes discovery possible.</p>
+<ul>
+<li><strong>Verified Ownership via Webmaster Tools:</strong> I registered and verified the site with <strong>Google Search Console (GSC)</strong> and <strong>Bing Webmaster Tools</strong>. This creates a direct communication line between the site and the search engine, allowing for manual indexing requests and error reporting.</li>
+<li><strong>XML Sitemap Deployment:</strong> I generated a dynamic XML sitemap—a digital &quot;table of contents&quot;—and submitted it directly to GSC. This ensures that the crawler doesn&#39;t have to &quot;guess&quot; the site structure and can find all high-priority pages immediately.</li>
+</ul>
+<hr>
+<h2 id="Step-2-Removing-Crawl-Friction"><a href="#Step-2-Removing-Crawl-Friction" class="headerlink" title="Step 2: Removing &quot;Crawl Friction&quot;"></a>Step 2: Removing &quot;Crawl Friction&quot;</h2><p>A new site is often fragile in the eyes of a bot. I performed a &quot;Pre-Index Audit&quot; to ensure there were no technical barriers.</p>
+<ul>
+<li><strong>Robots.txt Configuration:</strong> I audited the <code>robots.txt</code> file to ensure that essential directories were &quot;Allowed&quot; and that no &quot;Disallow&quot; strings were accidentally blocking the main content.</li>
+<li><strong>Index Tag Verification:</strong> I used a crawler to verify that no <code>noindex</code> meta tags were left over from the development&#x2F;staging phase, which is a common mistake that prevents new sites from appearing in search results.</li>
+<li><strong>Canonical Integrity:</strong> I implemented self-referencing canonical tags on all pages to signal to Google that these are the &quot;master&quot; versions of the content, preventing duplicate content issues before they start.</li>
+</ul>
+<hr>
+<h2 id="Step-3-Implementing-Push-vs-Pull-Indexing"><a href="#Step-3-Implementing-Push-vs-Pull-Indexing" class="headerlink" title="Step 3: Implementing &quot;Push&quot; vs. &quot;Pull&quot; Indexing"></a>Step 3: Implementing &quot;Push&quot; vs. &quot;Pull&quot; Indexing</h2><p>Traditionally, you wait for a bot to &quot;pull&quot; data (crawl). In 2026, professional SEOs &quot;push&quot; data for near-instant results.</p>
+<ul>
+<li><strong>Manual URL Inspection:</strong> For high-value landing pages (like the Tattoo Shop homepage), I used the <strong>URL Inspection Tool</strong> in GSC to &quot;Request Indexing,&quot; moving those pages to the top of Google’s priority queue.</li>
+<li><strong>IndexNow Protocol:</strong> I implemented the <strong>IndexNow API</strong>, which instantly notifies search engines (like Bing and Yandex) every time a new design or blog post is published, updated, or deleted. This reduces indexing latency from days to seconds.</li>
+</ul>
+<hr>
+<h2 id="Step-4-Signaling-Authority-through-Discovery-Links"><a href="#Step-4-Signaling-Authority-through-Discovery-Links" class="headerlink" title="Step 4: Signaling Authority through Discovery Links"></a>Step 4: Signaling Authority through Discovery Links</h2><p>Search engine bots are &quot;spiders&quot; that travel across the web via links. To speed up discovery, I created &quot;External Signals.&quot;</p>
+<ul>
+<li><strong>Internal Linking Architecture:</strong> I ensured that the homepage linked directly to major category pages, creating a &quot;flat&quot; architecture that allows bots to reach any page within three clicks.</li>
+<li><strong>Social &amp; External Pings:</strong> By sharing the new site on high-authority platforms (LinkedIn, Pinterest, and niche design forums), I created &quot;referral traffic&quot; and external links. When a bot crawls those high-authority sites and finds a link to my new site, it follows it and begins the indexing process naturally.</li>
+</ul>
+<hr>
+<h2 id="Step-5-Monitoring-the-Indexation-Lifecycle"><a href="#Step-5-Monitoring-the-Indexation-Lifecycle" class="headerlink" title="Step 5: Monitoring the Indexation Lifecycle"></a>Step 5: Monitoring the Indexation Lifecycle</h2><p>The job isn&#39;t done until the data shows up in the &quot;Pages&quot; report.</p>
+<ul>
+<li><strong>Validation:</strong> I monitored the <strong>Indexing Report</strong> in GSC to track the status of &quot;Crawled - currently not indexed&quot; vs. &quot;Indexed.&quot;</li>
+<li><strong>Rich Results Testing:</strong> I used the Rich Results Test tool to ensure that my <strong>Schema Markup</strong> was being parsed correctly, ensuring that when the site <em>is</em> indexed, it appears with enhanced features like price, ratings, and FAQ snippets.</li>
+</ul>
+<hr>
+<h2 id="Summary-Checklist-for-your-Portfolio"><a href="#Summary-Checklist-for-your-Portfolio" class="headerlink" title="Summary Checklist for your Portfolio"></a>Summary Checklist for your Portfolio</h2><table>
+<thead>
+<tr>
+<th><strong>Strategy</strong></th>
+<th><strong>Action Taken</strong></th>
+<th><strong>Business Outcome</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Manual Submission</strong></td>
+<td>GSC &amp; Bing Verification</td>
+<td>Established direct reporting and control.</td>
+</tr>
+<tr>
+<td><strong>Automated Sitemap</strong></td>
+<td>XML Submission</td>
+<td>Guaranteed 100% page discovery.</td>
+</tr>
+<tr>
+<td><strong>Latency Reduction</strong></td>
+<td>IndexNow API</td>
+<td>Achieved near-instant indexing for new content.</td>
+</tr>
+<tr>
+<td><strong>Crawl Efficiency</strong></td>
+<td>Robots.txt &amp; Canonical Audit</td>
+<td>Saved &quot;Crawl Budget&quot; for high-value pages.</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>1. Add Your Site to Google Search Console</strong></p>
+<p>The first step is to let Google know your site exists.</p>
+<ul>
+<li><p>Go to <a target="_blank" rel="noopener" href="https://search.google.com/search-console/">Google Search Console</a>.</p>
+</li>
+<li><p>Click <strong>“Add property”</strong>.</p>
+</li>
+<li><p>Select <strong>“URL prefix”</strong>.</p>
+</li>
+<li><p>Enter your full site URL (e.g., <code>https://yoursite.github.io/</code>).</p>
+</li>
+</ul>
+<p>This step essentially registers your website with Google, opening the door for indexing and search visibility.</p>
+<p><strong>2. Verify Ownership</strong></p>
+<p>Next, Google needs to confirm that you actually own the site before indexing it. There are several verification methods:</p>
+<ul>
+<li><strong>HTML file:</strong> Upload a verification file to your Hexo site.</li>
+<li><strong>HTML tag:</strong> Add a verification meta tag to your site&#39;s <code>&lt;head&gt;</code> section.</li>
+<li><strong>Google Analytics:</strong> Use an existing GA property to verify ownership.</li>
+</ul>
+<p><strong>3. Submit Your Sitemap</strong></p>
+<p>A sitemap gives Google a clear structure of your website, making the indexing process faster and more efficient.</p>
+<p>Although submitting a sitemap is optional for websites with fewer than 500 pages, it&#39;s still a best practice.</p>
+<ul>
+<li>Generate a sitemap for your Hexo site.</li>
+<li>Go to <strong>Sitemaps</strong> in GSC and enter your sitemap URL (e.g., <code>https://yoursite.com/sitemap.xml</code>).</li>
+</ul>
+<p>That&#39;s the typical GSC submission workflow. But since I also wanted to <strong>monitor my website traffic</strong> through <strong>Google Analytics</strong>, I flipped the order a bit:</p>
+<p>👉 I set up <strong>GA4 first</strong>, then used my GA property to verify ownership in Search Console (Step 2).</p>
+<p>This approach made the process more streamlined and ensured that both indexing and traffic tracking were set up at the same time.</p>
+<p>So, here&#39;s the exact process I followed to get my Hexo website indexed:</p>
+<hr>
+<p><strong>Step 1: Check website indexed status</strong></p>
+<ol>
+<li>Open Google Search.</li>
+<li>Enter your site URL in search bar, eg. site:yoursite.github.io.</li>
+</ol>
+<div class="post-single-img-container">
+  <img src="/post-images/how-do-i-make-my-website-crawlable/1_check_status.png" alt="check_status">
+</div>
+
+
+<p>Okay, that&#39;s the exact result I expected.</p>
+<p>Let&#39;s move on.</p>
+<p><strong>Step 2: Create your organization</strong></p>
+<ol>
+<li>Go to <a href="marketingplatform.google.com">Google Marketing Platform</a>.</li>
+<li>Click &quot;Admin management&quot;.</li>
+<li>Click &quot;Create Organization&quot;.</li>
+<li>Enter your organization name.</li>
+</ol>
+<p><img src="/2_create_organization.png" alt="create_organization"></p>
+<p><strong>Step 3: Create your account</strong></p>
+<ol>
+<li>Enter your account name.</li>
+</ol>
+<p><img src="/3_create_account.png" alt="create_account"></p>
+<p><strong>Step 4: Create your property</strong></p>
+<ol>
+<li>Enter your property name.</li>
+</ol>
+<p><img src="/4_create_property.png" alt="create_property"></p>
+<p><strong>Step 5: Create your business</strong></p>
+<ol>
+<li>Enter your business name.</li>
+<li>Select your business size.</li>
+</ol>
+<p><img src="/5_create_business.png" alt="create_business"></p>
+<p><strong>Step 6: Choose your business objectives</strong></p>
+<ol>
+<li>Select anything fits your goals.</li>
+</ol>
+<p><img src="/6_create_business_objectives.png" alt="create_business_objectives"></p>
+<p><strong>Step 7: Set up your data stream</strong></p>
+<ol>
+<li>Select &quot;Web&quot;.</li>
+<li>Enter your site URL.</li>
+<li>Pick up a stream name.</li>
+</ol>
+<p><img src="/7_setup_data_stream.png" alt="setup_data_stream"></p>
+<p><strong>Step 8: Set up a google tag</strong></p>
+<p>This is an essential step where let Google know XXXX, we can use Google Tag Manager to manage a big website, but for now, I chose to manually copy and paste in my hexo html file.</p>
+<p><img src="/8_setup_google_tag.png" alt="setup_google_tag"></p>
+<p>Pasted the tag after my head element, then hexo clean &amp;&amp; hexo g &amp;&amp; hexo d.</p>
+<p><img src="/9_paste_tag.png" alt="paste_tag.png"></p>
+<p>After your site is refreshed, you will be able to check the installation status.</p>
+<p><img src="/10_test_tag_installation.png" alt="test_tag_installation"></p>
+<p>Sometimes your web stream display will show up a warning message, but it is totally fine, don&#39;t worry.</p>
+<p><img src="/11_data_stream_display.png" alt="data_stream_display"></p>
+<p><strong>Step 9: Link your account to organization</strong> (Optional)</p>
+<p>This step is totally optional if you only have one website&#x2F; one account&#x2F; one property to manage</p>
+<ol>
+<li>Check the box in front of the account you want to link</li>
+<li>Click &quot;Link&quot;</li>
+</ol>
+<p><img src="/12_link_account_to_organization.png" alt="link_account_to_organization"></p>
+<p>Now you&#39;re done with setting up your hexo site with Google Analytics! </p>
+
+  </div>
+
+  <!-- Previous/Next Post Navigation -->
+  <div class="post-nav-links">
+    
+      <a href="/SEO/how-do-i-create-my-customer-personas-without-crm/" class="post-nav-link post-nav-prev">
+        <span class="post-nav-label">← Previous Blog</span>
+        <span class="post-nav-title">How do I Create my Customer Personas Without CRM</span>
+      </a>
+    
+
+    
+      <a href="/SEM/work3/" class="post-nav-link post-nav-next">
+        <span class="post-nav-label">Next Blog →</span>
+        <span class="post-nav-title">work 3</span>
+      </a>
+    
+  </div>
+  
+</article> 
+  </main>
+
+  <hr>
+
+  <footer style="text-align: center; padding-top: 1em;">
+    <p>&copy; 2026 Lan</p>
+  </footer>
+</body>
+</html>

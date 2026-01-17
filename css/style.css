@@ -306,12 +306,10 @@ code {
     .post-two-img-container-3-1 {
       gap: 1rem;
     }
-}
-@media only screen and (max-width: 350px) {
-  .post-two-img-container-3-1 {
-    grid-template-columns: 1fr;
-  }
-  .post-single-img-body-20 img {width: 100%;height: auto;}
+    .post-two-img-container-3-1 {
+      grid-template-columns: 1fr;
+    }
+    .post-single-img-body-20 img {width: 100%;height: auto;}
 }
 
 /* ----------Code block container styling---------- */
