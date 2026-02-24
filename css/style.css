@@ -19,6 +19,7 @@ header {
 .header-logo {display: flex; align-items: center;text-decoration: none;}
 .header-logo img {height: 40px;width: auto;max-width: 200px;object-fit: contain;}
 header nav { text-align: right; flex-shrink: 0; }
+header img {height: 40px;width: auto;max-width: 200px;object-fit: contain;}
 nav a { font-size: 1em; margin-right: 30px; text-decoration: none; font-weight: bold; }
 nav a:last-child { margin-right: 0; }
 a { color: #228bd1; }
@@ -313,7 +314,10 @@ code {
     .post-single-img-body-20 img {width: 100%;height: auto;}
 }
 
+
 /* ----------Code block container styling---------- */
+
+
 figure.highlight table,
 figure.highlight tr,
 figure.highlight td {
